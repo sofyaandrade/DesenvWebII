@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Formulário</h2>
+    <form action="script.php" method="post">
+        Nome: <input type="text" name="nome" required><br>
+        Telefone: <input type="number" name="telefone" required><br>
+        E-mail: <input type="email" name="email" required><br>
+        Mensagem: <textarea name="mensagem" required></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <h2>Enviar via GET</h2>
+    <a href="script.php?nome=Teste&telefone=123456789&email=teste@email.com&mensagem=Olá">Clique aqui para enviar dados via GET</a>
+</body>
+</html>
